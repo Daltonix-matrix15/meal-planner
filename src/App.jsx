@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import NavBar from "./components/Navbar";
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import RecipeDetails from "./pages/RecipeDetails";
@@ -32,7 +32,7 @@ export default function App() {
   return (
     <Router>
       <div className="min-h-screen bg-zinc-950 text-white selection:bg-amber-500 selection:text-zinc-950">
-        <Navbar favoritesCount={favorites.length} />
+        <NavBar favoritesCount={favorites.length} />
 
         <Routes>
           <Route
